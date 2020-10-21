@@ -2533,7 +2533,7 @@ form {
 		}
 
 		.wrapper.style1 {
-			background: #9b8b88;
+			background: #ca3a21;
 			color: #b9a5a2;
 		}
 
@@ -2588,6 +2588,8 @@ form {
 	
 	@media screen and (max-width: 340px) {
 	body {
+		font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
 		width: 100%;
 		margin-top: auto;
 		background-color: rgb(6, 6, 95);
@@ -2631,7 +2633,7 @@ form {
 		align-items: center;
 		background: linear-gradient(to right, rgb(4, 40, 241), rgb(3, 186, 241));
 		cursor: default;
-		height: 400px;
+		height: 600px;
 		left: 0;
 		line-height: 4em;
 		position: fixed;
@@ -2650,6 +2652,9 @@ form {
 		margin-top : 20px;
 		transition: 0.6s ease;	
 		margin-right: 30vh !important;	
+	}
+	a.logo{
+		height: 50px;
 	}
 }
 
@@ -2740,7 +2745,7 @@ form {
 			}
 
 			#header nav.right {
-				right: 1em;
+				right: 2em;
 				transition: 0.6s ease;
 			}
 			#header nav.right:hover {
@@ -2763,7 +2768,7 @@ form {
 				}
 
 					#header nav a[href="#menu"]:before {
-						content: "";
+						content: " Menu";
 						-moz-osx-font-smoothing: grayscale;
 						-webkit-font-smoothing: antialiased;
 						font-family: FontAwesome;
@@ -2840,8 +2845,8 @@ form {
 		position: fixed;
 		left: 0;
 		top: 0;
-		visibility: hidden;
-		width: 10em;
+		visibility: visible;
+		width: 14em;
 		z-index: 10002;
 	}
 
@@ -2908,7 +2913,7 @@ form {
 		}
 
 			#menu .close:before {
-				content: "";
+				content: " menu" ;
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
 				font-family: FontAwesome;
@@ -2918,7 +2923,7 @@ form {
 			}
 
 			#menu .close:before {
-				font-size: 1.25em;
+				font-size: 1.45em;
 			}
 
 			#menu .close:hover {
@@ -2928,7 +2933,7 @@ form {
 			@media screen and (max-width: 736px) {
 
 				#menu .close {
-					height: 4em;
+					height: 6em;
 					line-height: 6em;
 				}
 
@@ -3141,7 +3146,7 @@ form {
 			}
 
 				#footer1 ul li {
-					font-size: .9em;
+					font-size: 1.5em;
 				}
 
 					#footer1 ul li .icon:before {
@@ -3155,6 +3160,9 @@ form {
 		}
 		
 		@media screen and (max-width: 411px) {
+			.subpage{
+				background-size: cover !important;
+			}
 			a .logo {
 				margin-right: 200vh;
 			}
@@ -3620,7 +3628,7 @@ display: flex;
   font-family: cursive;
 
 
-}}
+}
 .cimages .dis2 {
 	background-color: wheat;
 	text-align: left;
@@ -3636,7 +3644,7 @@ display: flex;
 	margin-left: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 
-}}
+}
 .cimages a {
 	background-color: lemonchiffon;
 	color: lightseagreen;
@@ -3795,6 +3803,15 @@ p .dis{
 }
 .image.fit img{
 	display: flex;
+}
+.background{
+	background-image: url(../lemalog/computer.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+.trans{
 }
 
 

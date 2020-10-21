@@ -2,13 +2,7 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,500,700");
 
-/*
-	Retrospect by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
 
-/* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
@@ -19,7 +13,7 @@
 		vertical-align: baseline;
 	}
 
-	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	article, aside, details, figcaption, figure, , header, hgroup, menu, nav, section {
 		display: block;
 	}
 
@@ -1629,6 +1623,9 @@
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
+			#one{
+				width: cover !important;
+			}
 
 		}
 
@@ -2230,9 +2227,6 @@
 				width: 100%;
 			}
 
-
-			}
-
 	dl {
 		margin: 0 0 2em 0;
 	}
@@ -2632,7 +2626,7 @@
 		}
 
 	.feature {
-		background-color: rgba(144, 144, 144, 0.075);
+		background-color: rgba(172, 13, 13, 0.075);
 	}
 
 /* Image Grid */
@@ -2651,8 +2645,7 @@
 
 		.image-grid .image {
 			margin: 0;
-			width: 90% !important;
-			height: 400px !important;
+		
 		}
 
 			.image-grid .image img {
@@ -2666,7 +2659,7 @@
 			}
 
 				.image-grid .image {
-					width: 50%;
+					width: 100% !important;
 				}
 
 		}
@@ -2678,7 +2671,7 @@
 			}
 
 				.image-grid .image {
-					width: 100%;
+					width: 100% !important;
 				}
 
 		}
@@ -2692,7 +2685,7 @@
 
 		.wrapper > .inner {
 			margin: 0 auto;
-			width: 70em;
+			width: 90em;
 		}
 
 		.wrapper.style1 {
@@ -2705,7 +2698,7 @@
 			}
 
 			.wrapper.style1 a {
-				color: #51BAA4;
+				color: #191f1d;
 			}
 
 			.wrapper.style1 strong, .wrapper.style1 b {
@@ -3408,7 +3401,7 @@
 			}
 
 				.wrapper > .inner {
-					width: 65em;
+					width: 100em;
 				}
 
 		}
@@ -3488,48 +3481,7 @@
 			text-decoration: none;
 		}
 
-			#header a[href="#nav"] {
-				text-decoration: none;
-				-webkit-tap-highlight-color: transparent;
-			}
-
-				#header a[href="#nav"]:before {
-					content: "";
-					-moz-osx-font-smoothing: grayscale;
-					-webkit-font-smoothing: antialiased;
-					font-family: FontAwesome;
-					font-style: normal;
-					font-weight: normal;
-					text-transform: none !important;
-				}
-
-				#header a[href="#nav"]:before {
-					margin: 0 0.5em 0 0;
-				}
-
-			#header a + a[href="#nav"]:last-child {
-				border-left: solid 1px transparent;
-				padding-left: 1.25em;
-				margin-left: 0.5em;
-			}
-
-		#header.alt {
-			background-color: transparent;
-			font-size: 1.25em;
-			padding: 1em 2em;
-			position: absolute;
-		}
-
-			#header.alt > h1 {
-				color: inherit;
-				position: static;
-				float: left;
-			}
-
-			#header.alt a[href="#nav"] {
-				margin-right: 0;
-			}
-
+			
 	@media screen and (max-width: 980px) {
 
 		body {
@@ -3593,8 +3545,8 @@
 	.nnn {
 		margin: 20px 20px;
 		 display: grid !important;
-		 background-size: cover;
-		 background-color: #01286d !important;
+		 background-size: cover !important;
+		 background-color: #cdd7e7 !important;
 	}
 	.nnn img{
 		width: 25em !important;
@@ -3630,7 +3582,7 @@
 		background-color: #1E2832 !important;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed;
-		background-image: url("overlay.png"), url("banner.jpg");
+		background-image: url("overlay.png"), url("showcase.jpg");
 		background-size: cover;
 		text-align: center;
 	}
@@ -3865,14 +3817,21 @@
 
 		}
 		@media screen and (max-width: 500px) {
+			body{
+				background-color: #f2f2f2 !important;
+				width: cover !important;
+			}
 			#banner .icon {
 				margin-top: 100px;
-			
-
 			}
+
 		}
 
 		@media screen and (max-width: 411px) {
+			body{
+				background-color: #f2f2f2 !important;
+				width: cover !important;
+			}
 			#banner .icon {
 		font-size: 2em;
 				margin-top: 100px;
@@ -4083,7 +4042,25 @@
 		}
 		#menu2 li {
 			
-			display: inline-flex;
+			display: inline-block;
+			margin-top: 5vh !important;
+			margin-left: 0vh !important;
+
+	  }
+	}
+	@media screen and (max-width: 500px) {
+			
+		#menu2{
+			justify-content: center;
+			padding-right: 20px;
+			align-items: center;
+			margin-top: 3.5vh;
+			margin-left: 15vh !important;
+			width: 20vh !important;
+		}
+		#menu2 li {
+			
+			display: inline-block;
 			margin-top: 5vh !important;
 			margin-left: 0vh !important;
 
